@@ -33,14 +33,14 @@ jobs:
         run: npm run build -- --configuration production
 
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=rosin.alexis
-            -Dsonar.projectKey=oc-rosinalexis
+            -Dsonar.organization=oc-rosinalexis
+            -Dsonar.projectKey=rosinalexis_Projet-P10-Bob-App
             -Dsonar.sources=front/src
             -Dsonar.tests=front/src
             -Dsonar.typescript.lcov.reportPaths=front/coverage/bobapp/lcov-report/lcov.info
