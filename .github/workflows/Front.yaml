@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Front-CI-CD:
     runs-on: ubuntu-latest
 
     defaults:
