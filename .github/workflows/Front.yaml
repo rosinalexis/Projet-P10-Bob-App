@@ -38,7 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: ./front
+          projectBaseDir: front/
           args: >
             -Dsonar.organization=oc-rosinalexis
             -Dsonar.projectKey=rosinalexis_Projet-P10-Bob-App
