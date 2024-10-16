@@ -23,7 +23,7 @@
 		<!--
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath> -->
 		<sonar.coverage.jacoco.xmlReportPaths>
-			${project.basedir}/../target/jacoco-report/jacoco.xml
+			target/site/jacoco-report/jacoco.xml
 		</sonar.coverage.jacoco.xmlReportPaths>
 	</properties>
 	<dependencies>
