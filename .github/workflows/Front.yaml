@@ -43,9 +43,9 @@ jobs:
             -Dsonar.projectKey=rosinalexis_Projet-P10-Bob-App
             -Dsonar.sources=front/src
             -Dsonar.tests=front/src
-            -Dsonar.typescript.lcov.reportPaths=front/coverage/bobapp/lcov-report/lcov.info
+            -Dsonar.typescript.lcov.reportPaths=front/coverage/bobapp/lcov.info
             -Dsonar.ts.tslintconfigpath=tslint.json
-            -Dsonar.exclusions=front/**/node_modules/**,**/assets/**,**/*.spec.ts
+            -Dsonar.exclusions=front/**/node_modules/**,**/assets/**
             -Dsonar.test.inclusions=front/**/*.spec.ts
 
       - name: Docker Hub
